@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Sayfa Başlığı -->
+    <title>
+      Ahmad Yaman Sayed | Full Stack Developer & Blockchain Specialist
+    </title>
+
+    <!-- SEO Açıklama -->
+    <meta
+      name="description"
+      content="Ahmad Yaman Sayed'in kişisel web sitesi. Full Stack yazılım geliştirici ve blockchain uzmanı. Projeler, iletişim ve daha fazlası sayedsoft.com'da."
+    />
+
+    <!-- Anahtar Kelimeler -->
+    <meta
+      name="keywords"
+      content="Ahmad Yaman Sayed, sayedsoft, yazılım geliştirici, Solidity, Laravel, Vue, blockchain, full stack developer, freelancer"
+    />
+
+    <!-- Dil -->
+    <meta http-equiv="Content-Language" content="tr" />
+
+    <!-- Yazar -->
+    <meta name="author" content="Ahmad Yaman Sayed" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/favicon.svg" />
+
+    <!-- Open Graph (Facebook, WhatsApp, vs) -->
+    <meta
+      property="og:title"
+      content="Ahmad Yaman Sayed | Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Yazılım geliştirici, blockchain uzmanı ve freelancer. Web & mobil projeler ve akıllı sözleşmeler geliştirme."
+    />
+    <meta
+      property="og:image"
+      content="https://sayedsoft.com/img/profile.jpeg"
+    />
+    <meta property="og:url" content="https://sayedsoft.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ahmad Yaman Sayed | Full Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Yazılım geliştirici, blockchain uzmanı ve freelancer."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sayedsoft.com/img/profile.jpeg"
+    />
+
+    <!-- Tailwind ve Material Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+    />
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Alpine.js CDN -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- Navbar -->
+    <header class="bg-white shadow fixed w-full z-50" x-data="{ open: false }">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="img/favicon.svg" alt="Logo" class="w-10 h-10" />
+          <h1 class="text-xl font-bold">Ahmad Yaman Sayed</h1>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="#about" class="hover:text-blue-500">Hakkımda</a>
+          <a href="#projects" class="hover:text-blue-500">Projeler</a>
+          <a href="#contact" class="hover:text-blue-500">İletişim</a>
+        </nav>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          @click="open = !open"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              x-show="!open"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+            <path
+              x-show="open"
+              x-cloak
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav
+        x-show="open"
+        x-transition
+        class="md:hidden px-4 pb-4 bg-white shadow"
+      >
+        <a href="#about" class="block py-2 text-gray-700 hover:text-blue-500"
+          >Hakkımda</a
+        >
+        <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-500"
+          >Projeler</a
+        >
+        <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-500"
+          >İletişim</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-white text-center"
+    >
+      <div class="max-w-2xl mx-auto flex flex-col items-center">
+        <!-- Profil Fotoğrafı -->
+        <img
+          src="img/profile.jpeg"
+          alt="Ahmad Yaman Sayed"
+          class="w-36 h-36 rounded-full shadow-lg border-4 border-white object-cover mb-6"
+        />
+
+        <!-- Başlık -->
+        <h2 class="text-4xl font-bold mb-4">
+          Merhaba, ben Ahmad Yaman Sayed 👋
+        </h2>
+
+        <!-- Açıklama -->
+        <p class="text-lg mb-4 text-gray-700">
+          Full Stack Yazılım Geliştiricisi & Blockchain Uzmanı
+        </p>
+        <p class="text-md text-gray-600 mb-6">
+          Modern web & mobil uygulamalar, mikroservis altyapıları ve akıllı
+          sözleşmeler geliştiriyorum.
+        </p>
+
+        <!-- CTA -->
+        <a
+          href="#contact"
+          class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
+        >
+          Benimle Çalışın
+        </a>
+      </div>
+    </section>
+
+    <!-- Hakkımda -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-8 text-center">Hakkımda</h3>
+        <div class="space-y-6 text-gray-800 text-lg">
+          <p>
+            Merhaba, ben Ahmad Yaman Sayed. Halep doğumluyum ve Suriye, Türkiye
+            ve global çapta birçok projede aktif rol aldım. Kod yazmaya küçük
+            yaşlarda başladım ve zamanla bu merakı profesyonel kariyerime
+            dönüştürdüm.
+          </p>
+          <p>
+            PHP, JavaScript/TypeScript, Go ve Python dillerinde tam yığın
+            (full-stack) çözümler geliştiriyorum. Bunun yanında Solidity ile
+            Ethereum, BSC ve diğer EVM tabanlı zincirlerde akıllı kontratlar
+            yazıyor, test ediyor ve denetliyorum.
+          </p>
+          <p>
+            AWS ve Docker teknolojileriyle ölçeklenebilir ve güvenilir sistemler
+            kurma konusunda deneyimliyim. Laravel, NestJS, Nuxt.js, Next.js gibi
+            modern framework'lerle REST API ve SPA mimarileri inşa ettim.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Uzmanlık Alanlarım -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-10 text-center">
+          Uzmanlık Alanlarım
+        </h3>
+        <div class="grid md:grid-cols-3 gap-6 text-center text-gray-800">
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <h4 class="text-xl font-bold mb-2">Web & Mobil Geliştirme</h4>
+            <p class="text-sm">
+              Laravel, Vue.js, React, Ionic, Nuxt/Next. Modern UI/UX, responsive
+              tasarımlar ve performans odaklı sistemler.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <h4 class="text-xl font-bold mb-2">Blockchain & Solidity</h4>
+            <p class="text-sm">
+              Akıllı sözleşmeler, DeFi protokolleri, token ekonomileri,
+              merkeziyetsiz uygulamalar (dApp) ve güvenlik.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <h4 class="text-xl font-bold mb-2">Cloud & DevOps</h4>
+            <p class="text-sm">
+              AWS, Docker, Kubernetes, CI/CD, mikroservis altyapıları ve
+              konteyner mimarileri ile ölçeklenebilirlik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeler -->
+    <section id="projects" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-10 text-center">Projeler</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <h4 class="font-bold text-xl mb-2">Kripto Borsa</h4>
+            <p class="text-sm">Node.js, NestJS, Solidity, AWS</p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <h4 class="font-bold text-xl mb-2">Mobil Ödeme Sistemi</h4>
+            <p class="text-sm">Ionic, Firebase, Laravel</p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <h4 class="font-bold text-xl mb-2">CMS ve Tema Geliştirme</h4>
+            <p class="text-sm">WordPress, Joomla, OpenCart</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-6">İletişim</h3>
+        <p class="mb-4">
+          Benimle iletişime geçmek için aşağıdaki e-posta adresini
+          kullanabilirsiniz:
+        </p>
+        <p class="text-lg font-medium">
+          📧
+          <a
+            href="mailto:yemen@sayedsoft.com"
+            class="text-blue-600 hover:underline"
+            >yemen@sayedsoft.com</a
+          >
+        </p>
+        <p class="mt-2 mb-6">📞 +90 554 697 34 33</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center text-sm">
+      <p class="mb-2">&copy; 2025 Ahmad Yaman Sayed - Tüm hakları saklıdır.</p>
+      <p>
+        GitHub:
+        <a
+          href="https://github.com/yemosoft"
+          class="hover:underline"
+          target="_blank"
+          >yemosoft</a
+        >
+        •
+        <a
+          href="https://github.com/sayedsoft"
+          class="hover:underline"
+          target="_blank"
+          >sayedsoft</a
+        >
+        •
+        <a
+          href="https://github.com/yemowith"
+          class="hover:underline"
+          target="_blank"
+          >yemowith</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
