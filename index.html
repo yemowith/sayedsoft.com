@@ -204,66 +204,174 @@
       </div>
     </section>
 
-    <!-- Uzmanlık Alanlarım -->
-    <section class="py-16 bg-gray-100">
+    <section id="projects" class="py-20 bg-gray-100">
       <div class="max-w-6xl mx-auto px-4">
-        <h3 class="text-3xl font-semibold mb-10 text-center">
-          Uzmanlık Alanlarım
+        <h3 class="text-3xl font-bold text-center mb-12">
+          Projelerim ve Uzmanlık Alanlarım
         </h3>
-        <div class="grid md:grid-cols-3 gap-6 text-center text-gray-800">
-          <div
-            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
-          >
-            <h4 class="text-xl font-bold mb-2">Web & Mobil Geliştirme</h4>
-            <p class="text-sm">
-              Laravel, Vue.js, React, Ionic, Nuxt/Next. Modern UI/UX, responsive
-              tasarımlar ve performans odaklı sistemler.
-            </p>
-          </div>
-          <div
-            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
-          >
-            <h4 class="text-xl font-bold mb-2">Blockchain & Solidity</h4>
-            <p class="text-sm">
-              Akıllı sözleşmeler, DeFi protokolleri, token ekonomileri,
-              merkeziyetsiz uygulamalar (dApp) ve güvenlik.
-            </p>
-          </div>
-          <div
-            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
-          >
-            <h4 class="text-xl font-bold mb-2">Cloud & DevOps</h4>
-            <p class="text-sm">
-              AWS, Docker, Kubernetes, CI/CD, mikroservis altyapıları ve
-              konteyner mimarileri ile ölçeklenebilirlik.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Projeler -->
-    <section id="projects" class="py-16 bg-gray-100">
-      <div class="max-w-6xl mx-auto px-4">
-        <h3 class="text-3xl font-semibold mb-10 text-center">Projeler</h3>
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Proje 1: Kripto Borsa Platformu -->
           <div
-            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+            class="bg-white rounded-xl shadow hover:shadow-xl transition p-6"
           >
-            <h4 class="font-bold text-xl mb-2">Kripto Borsa</h4>
-            <p class="text-sm">Node.js, NestJS, Solidity, AWS</p>
+            <h4 class="text-xl font-semibold mb-2">Kripto Borsa Platformu</h4>
+            <p class="text-sm text-gray-600 mb-3">
+              Blockchain entegrasyonlu, yüksek performanslı kripto para
+              alım-satım platformları.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-3">
+              <li>• Microservice mimarisi (Node.js, NestJS, Redis)</li>
+              <li>• Next.js ile SSR web arayüzü</li>
+              <li>• Blockchain: ETH, TRX, BTC API & Web3 entegrasyonları</li>
+            </ul>
+            <span
+              class="text-[10px] inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded"
+              >Blockchain & Fintech</span
+            >
           </div>
+
+          <!-- Proje 2: Özel Cüzdan ve DApp -->
           <div
-            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+            class="bg-white rounded-xl shadow hover:shadow-xl transition p-6"
           >
-            <h4 class="font-bold text-xl mb-2">Mobil Ödeme Sistemi</h4>
-            <p class="text-sm">Ionic, Firebase, Laravel</p>
+            <h4 class="text-xl font-semibold mb-2">Özel Cüzdan ve DApp</h4>
+            <p class="text-sm text-gray-600 mb-3">
+              Metamask benzeri tarayıcı eklentileri, Web3 ile uyumlu cüzdan
+              sistemleri ve merkeziyetsiz uygulamalar.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-3">
+              <li>• Web3.js / Ethers.js kullanımı</li>
+              <li>• Token takas sistemleri (DEX)</li>
+              <li>• Mobil & browser tabanlı DApp'ler</li>
+            </ul>
+            <span
+              class="text-[10px] inline-block bg-indigo-100 text-indigo-700 px-2 py-1 rounded"
+              >DeFi & Wallet Dev</span
+            >
           </div>
+
+          <!-- Proje 3: Smart Contract Geliştirme -->
           <div
-            class="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+            class="bg-white rounded-xl shadow hover:shadow-xl transition p-6"
           >
-            <h4 class="font-bold text-xl mb-2">CMS ve Tema Geliştirme</h4>
-            <p class="text-sm">WordPress, Joomla, OpenCart</p>
+            <h4 class="text-xl font-semibold mb-2">
+              Smart Contract Geliştirme
+            </h4>
+            <p class="text-sm text-gray-600 mb-3">
+              Solidity ve Vyper ile ERC-20, ERC-721, ERC-1155 gibi akıllı
+              kontratların geliştirilmesi ve test edilmesi.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-3">
+              <li>• Hardhat & Foundry geliştirme ortamı</li>
+              <li>• Safe, Proxy, DAO yapıları</li>
+              <li>• Test, güvenlik denetimi ve deploy</li>
+            </ul>
+            <span
+              class="text-[10px] inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded"
+              >Solidity & EVM</span
+            >
+          </div>
+
+          <!-- Proje 4: Console / Terminal Uygulamalar -->
+          <div
+            class="bg-white rounded-xl shadow hover:shadow-xl transition p-6"
+          >
+            <h4 class="text-xl font-semibold mb-2">
+              Terminal / Console Uygulamaları
+            </h4>
+            <p class="text-sm text-gray-600 mb-3">
+              Go, Node.js veya Python ile terminal tabanlı CLI araçları ve
+              otomasyon scriptleri.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-3">
+              <li>• Shell script ile sistem araçları</li>
+              <li>• Cron, queue ve daemon servisler</li>
+              <li>• CLI tabanlı analiz ve yönetim paneli</li>
+            </ul>
+            <span
+              class="text-[10px] inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded"
+              >DevOps & CLI Tools</span
+            >
+          </div>
+
+          <!-- Proje 5: Web Site Geliştirme -->
+          <div
+            class="bg-white rounded-xl shadow hover:shadow-xl transition p-6"
+          >
+            <h4 class="text-xl font-semibold mb-2">Website Geliştirme</h4>
+            <p class="text-sm text-gray-600 mb-3">
+              Kurumsal web siteleri, kişisel portföyler ve performans odaklı
+              modern frontend projeleri.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-3">
+              <li>• Next.js, Nuxt.js, Laravel</li>
+              <li>• Tailwind, Material UI, Bootstrap</li>
+              <li>• SEO uyumlu SSR yapı</li>
+            </ul>
+            <span
+              class="text-[10px] inline-block bg-green-100 text-green-700 px-2 py-1 rounded"
+              >Frontend & Web</span
+            >
+          </div>
+
+          <!-- Proje 6: E-ticaret Geliştirme -->
+          <div
+            class="bg-white rounded-xl shadow hover:shadow-xl transition p-6"
+          >
+            <h4 class="text-xl font-semibold mb-2">E-Ticaret Geliştirme</h4>
+            <p class="text-sm text-gray-600 mb-3">
+              Shopify, OpenCart, WooCommerce veya özel Laravel e-ticaret
+              sistemleri.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-3">
+              <li>• Sepet, kampanya, ödeme sistemleri</li>
+              <li>• Çoklu dil & para birimi</li>
+              <li>• Sanal POS ve kargo entegrasyonu</li>
+            </ul>
+            <span
+              class="text-[10px] inline-block bg-red-100 text-red-700 px-2 py-1 rounded"
+              >E-Commerce Dev</span
+            >
+          </div>
+
+          <!-- Proje 7: CRM Geliştirme -->
+          <div
+            class="bg-white rounded-xl shadow hover:shadow-xl transition p-6"
+          >
+            <h4 class="text-xl font-semibold mb-2">CRM Yazılımları</h4>
+            <p class="text-sm text-gray-600 mb-3">
+              Müşteri ilişkileri yönetimi için özel çözümler. Satış, destek,
+              kampanya ve fatura modülleri.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-3">
+              <li>• Laravel & Vue.js tabanlı CRM sistemleri</li>
+              <li>• Raporlama, yetkilendirme ve bildirim altyapısı</li>
+              <li>• Entegrasyon: Mail, WhatsApp, SMS</li>
+            </ul>
+            <span
+              class="text-[10px] inline-block bg-purple-100 text-purple-700 px-2 py-1 rounded"
+              >Business Software</span
+            >
+          </div>
+
+          <!-- Proje 8: Otomasyon Sistemleri -->
+          <div
+            class="bg-white rounded-xl shadow hover:shadow-xl transition p-6"
+          >
+            <h4 class="text-xl font-semibold mb-2">Otomasyon Sistemleri</h4>
+            <p class="text-sm text-gray-600 mb-3">
+              Tekstil, üretim ve hizmet sektörlerine özel otomasyon çözümleri.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-3">
+              <li>• Barcode, cihaz entegrasyonu, veri analizi</li>
+              <li>• Arka planda çalışan kontrol sistemleri</li>
+              <li>• ERP uyumlu veri çıktıları</li>
+            </ul>
+            <span
+              class="text-[10px] inline-block bg-orange-100 text-orange-700 px-2 py-1 rounded"
+              >Endüstriyel Çözümler</span
+            >
           </div>
         </div>
       </div>
